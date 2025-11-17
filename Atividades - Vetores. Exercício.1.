@@ -1,0 +1,38 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro ordem [10]
+		inteiro X
+		inteiro auxiliar, troc1, troc2
+
+		escreva ("Vamos ordenar os números! Me envie uma sequência númerica de 1 até 10 de forma aleatória")
+		X=0
+	
+
+		enquanto ( X <10 ) { 	
+			leia (ordem[X])
+			X++
+			escreva (" Me envie o próximo número")}
+		
+		para  ( troc1=0; troc1<9;troc1++)
+		{
+		para  ( troc2=0; troc2<9;troc2++)
+		{
+
+		se (ordem[troc2] < ordem[troc2+1]){
+
+			auxiliar=ordem[troc2]
+			ordem[troc2] = ordem[troc2+1] 
+			ordem[troc2+1]=auxiliar 
+		}
+		}
+		}
+		escreva (" a Ordem correta dos números é:\n")
+
+		para (troc1=0; troc1<=9;troc1++){
+			escreva(ordem[troc1])
+			}		
+	}
+}
