@@ -1,0 +1,79 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro ordem [10]
+		inteiro soma,X
+		real media
+
+		escreva ("QUE TAL BRINCARMOS DE CÁUCULO, ME ENVIE 10 NÚMEROS INTEIROS E VAMOS DESCOBRIR QUEM IMPAR , QUEM É PAR, QUAL A SOMA DELES E MÉDIA ENTRE ELES!!!\n")
+		escreva ("\nPode enviar o primeiro número\n")
+		X=0
+	
+
+			enquanto ( X <10 ) { 	
+				leia (ordem[X])
+				X++
+				escreva ("\nMe envie o próximo número\n")}
+			
+
+				X=0
+			
+			
+		escreva ("\nOs elementos nos índices ímpares são:\n") 
+			para (X=1; X < 10; X=X+2){
+					escreva(ordem[X]," ")
+				}
+				escreva("\n")
+
+
+        	
+			
+		escreva("\nA agora vamos descobrir os números pares!\n")
+
+			para (X = 0 ; X <10; X++){
+				se (ordem[X] % 2 ==0){
+					escreva (ordem[X]," ")
+				}
+				}
+		
+		escreva("\n")
+
+			     X=0
+			     soma=0
+
+
+			enquanto ( X<10)
+			    { soma= soma+ordem[X] 
+		     	X=X+1 }
+
+			
+
+		escreva("\nA soma de todos os números dá:\n", soma)
+
+			
+
+
+		escreva ("\nPra terminar a calcular a média desses números\n")
+				
+				media=soma/10
+
+				escreva("\nO valor da média é:", media)
+
+				escreva("\n")
+				
+
+			}
+			
+		
+	
+}
+
+
+
+
+
+
+
+			
